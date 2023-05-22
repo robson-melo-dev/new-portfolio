@@ -1,0 +1,94 @@
+@import "assets/sass/colors";
+
+@mixin translateAnim($x, $y, $duration, $delay) {
+  //recieves Y and X positions before the animation and the delay
+  opacity: 0;
+  transform: translate($x, $y);
+  animation: slide $duration forwards ease;
+  animation-delay: $delay;
+}
+
+@mixin highlighterAnim($duration, $delay) {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 120%;
+  left: -2px;
+  bottom: -2px;
+  z-index: -1;
+  /* transform: rotate(-2deg); */
+  animation: highLight $duration forwards ease;
+  animation-delay: $delay;
+}
+
+@mixin fade($delay) {
+  opacity: 0;
+  animation: fade 1s forwards ease;
+  animation-delay: $delay;
+}
+
+@mixin fullWidth($delay) {
+  animation: fullWidth 0.4s forwards ease-in-out;
+  animation-delay: $delay;
+}
+
+@mixin bounce($delay) {
+  animation: bounce 2s infinite;
+  animation-delay: $delay;
+}
+
+@keyframes slide {
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fullWidth {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes highLight {
+  100% {
+    /* Highlight color */
+    background-color: $accentGreen;
+    content: "";
+    position: absolute;
+    width: calc(100% + 20px);
+    height: 100%;
+    left: -10px;
+    bottom: -2px;
+    z-index: -1;
+    /* transform: rotate(-2deg); */
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-0.8rem);
+  }
+  60% {
+    transform: translateY(-0.4rem);
+  }
+}
