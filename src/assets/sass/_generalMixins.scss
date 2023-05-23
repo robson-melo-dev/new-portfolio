@@ -1,3 +1,4 @@
+@import "assets/sass/colors";
 @mixin techBackground {
   background-color: #ffffff;
   background-position: fixed;
@@ -23,5 +24,17 @@
   &:hover {
     background-color: $accent;
     color: $white;
+  }
+}
+
+@mixin Link {
+  padding: 0 1rem 0 1rem;
+  text-decoration: none;
+  font-size: 18px;
+  color: $white;
+  transition: all 0.2s ease-in;
+  &:hover {
+    background-color: $purple;
+    border-radius: 2rem;
   }
 }

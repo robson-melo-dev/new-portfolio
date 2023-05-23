@@ -3,10 +3,10 @@
 @import "../../assets/sass/animations";
 .Hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 2rem 5rem 2rem 5rem;
-  min-height: 85vh;
+  min-height: 80vh;
   &__Presentation {
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@
   }
   &__Name {
     @include PoppinsBold;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: $white;
   }
   &__Profession {

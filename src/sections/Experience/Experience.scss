@@ -1,8 +1,18 @@
 @import "assets/sass/colors";
 @import "assets/sass/animations";
+@import "assets/sass/fonts";
+@import "assets/sass/generalMixins";
 .Experience {
   position: relative;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5rem 2rem 5rem;
+
+  &__Title {
+    @include PoppinsBold;
+    font-size: 3rem;
+  }
 
   &__BlueLight {
     @include fade(2s);
@@ -18,5 +28,61 @@
       #7000ff 360deg
     );
     filter: blur(750px);
+  }
+  &__Container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0 2rem 0;
+    gap: 4rem;
+  }
+  &__Job {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-content: center;
+    gap: 2rem;
+    width: 30rem;
+    min-height: 30rem;
+    background: linear-gradient(180deg, #171a1b 0%, rgba(23, 26, 27, 0) 100%);
+    opacity: 0.9;
+    border-radius: 15px 15px 0px 0px;
+    padding: 1rem 3rem 1rem 3rem;
+  }
+  &__Spheres {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  &__Sphere-Red {
+    background-color: rgba(255, 95, 86, 1);
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+  }
+  &__Sphere-Yellow {
+    background-color: rgba(255, 189, 46, 1);
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+  }
+  &__Sphere-Green {
+    background-color: rgba(39, 201, 63, 1);
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+  }
+  &__WorkTitle {
+    padding: 4rem 5rem 1rem 0;
+    @include FiraRegular;
+    font-size: 1.5rem;
+  }
+  &__WorkImg {
+    width: 15rem;
+  }
+  &__Link {
+    @include Link;
   }
 }

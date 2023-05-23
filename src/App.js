@@ -13,7 +13,6 @@ function App() {
       <Experience />
       <Projects />
       <Contact />
-      <h1>Hello World</h1>
       <br></br>
       <br></br>
       <br></br>

@@ -25,7 +25,7 @@ const Hero = () => {
           <div className="Skills__Title">robsonwebdev.com</div>
         </div>
         <code className="Skills__Code">
-          <span className="Skills__Class">.AboutMe </span>
+          <span className="Skills__Class">Skills&nbsp;</span>
           {"{"}
           <p>
             &nbsp;&nbsp;
@@ -35,24 +35,28 @@ const Hero = () => {
           <p>
             &nbsp;&nbsp;
             <span className="Skills__Property">Technologies: </span>
-            JavaScript,TypeScript, React, NextJS,
+            JavaScript, TypeScript, React, NextJS,
             <br />
             &nbsp;&nbsp;Sass, CSS, BEM, Tailwind, GraphQL;
           </p>
           {"}"}
         </code>
         <code className="Skills__Code">
-          <span className="Skills__Class">.Education </span>
+          <span className="Skills__Class">Work&nbsp;</span>
           {"{"}
           <p>
             &nbsp;&nbsp;
-            <span className="Skills__Property">FreeCodeCamp: </span>
-            Frontend Courses;
+            <span className="Skills__Property">CurrentJob: </span>
+            Remote Frontend Contractor in the US;
           </p>
           <p>
             &nbsp;&nbsp;
-            <span className="Skills__Property">EBAC: </span>
-            TI do Zero ao Pro (Fullstack Python) - in progress;
+            <span className="Skills__Property">AboutMe: </span>I am a
+            self-taught Frontend Developer,
+            <br />
+            &nbsp;&nbsp;with just over a year of professional experience in this
+            field, <br />
+            &nbsp;&nbsp;that is my true passion;
           </p>
           {"}"}
         </code>
