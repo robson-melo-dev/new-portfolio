@@ -1,0 +1,100 @@
+@import "../../assets/sass/colors";
+@import "../../assets/sass/fonts";
+@import "../../assets/sass/animations";
+.Hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem 2rem 5rem;
+  min-height: 85vh;
+  &__Presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  &__Greetings {
+    @include PoppinsRegular;
+    font-size: 3rem;
+    color: $accentGreen;
+  }
+  &__Name {
+    @include PoppinsBold;
+    font-size: 3rem;
+    color: $white;
+  }
+  &__Profession {
+    @include PoppinsSemiBold;
+    font-size: 3rem;
+    color: $accentGreen;
+    letter-spacing: 0.055em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: $accentGreen;
+    font-smooth: always;
+  }
+}
+.Skills {
+  @include FiraRegular;
+  box-sizing: border-box;
+  width: 45vw;
+  max-height: 500px;
+  max-width: 862px;
+  background: #171a1b;
+  opacity: 0.8;
+  border: 1px solid #4a4a4a;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+
+  &__Header {
+    position: relative;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 0.8rem;
+  }
+  &__Spheres {
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    display: flex;
+    gap: 0.5rem;
+  }
+  &__Sphere-Red {
+    background-color: rgba(255, 95, 86, 1);
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+  }
+  &__Sphere-Yellow {
+    background-color: rgba(255, 189, 46, 1);
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+  }
+  &__Sphere-Green {
+    background-color: rgba(39, 201, 63, 1);
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+  }
+  &__Title {
+    background-color: rgba(32, 34, 38, 0.9);
+    border-radius: 5px;
+    padding: 0 5rem 0 5rem;
+  }
+  &__Code {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  &__Class {
+    color: $purple;
+  }
+  &__Property {
+    color: $accentGreen;
+  }
+}

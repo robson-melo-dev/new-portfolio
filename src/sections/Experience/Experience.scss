@@ -1,0 +1,22 @@
+@import "assets/sass/colors";
+@import "assets/sass/animations";
+.Experience {
+  position: relative;
+  min-height: 100vh;
+
+  &__BlueLight {
+    @include fade(2s);
+    z-index: -1;
+    position: absolute;
+    min-width: 85vw;
+    min-height: 52vw;
+    top: 0;
+    left: 10vw;
+    background: conic-gradient(
+      from 180deg at 50% 50%,
+      #00ffe0 0deg,
+      #7000ff 360deg
+    );
+    filter: blur(750px);
+  }
+}
