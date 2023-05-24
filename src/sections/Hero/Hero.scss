@@ -37,8 +37,8 @@
 .Skills {
   @include FiraRegular;
   box-sizing: border-box;
-  width: 45vw;
-  max-height: 500px;
+  width: 500;
+  min-height: 500px;
   max-width: 862px;
   background: #171a1b;
   opacity: 0.8;
