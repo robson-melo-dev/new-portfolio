@@ -22,25 +22,25 @@ const Header = () => {
       <div className="Header__Socials">
         <a
           className="Header__Social-link"
-          href="https://www.linkedin.com/in/robson-the-dev/"
+          href="https://www.linkedin.com/in/robsonthedev/"
         >
           <img className="Header__Social-ico" src={linkedin} alt="LinkedIn" />
         </a>
         <a
           className="Header__Social-link"
-          href="https://www.linkedin.com/in/robson-the-dev/"
+          href="https://github.com/robson-melo-dev"
         >
           <img className="Header__Social-ico" src={github} alt="GitHub" />
         </a>
         <a
           className="Header__Social-link"
-          href="https://www.linkedin.com/in/robson-the-dev/"
+          href="https://www.instagram.com/progsemfronteiras/"
         >
           <img className="Header__Social-ico" src={instagram} alt="Instagram" />
         </a>
         <a
           className="Header__Social-Link"
-          href="https://www.linkedin.com/in/robson-the-dev/"
+          href="https://www.youtube.com/channel/UCog_5fNwmJn2l9zs7f2RPfQ"
         >
           <img className="Header__Social-ico" src={youtube} alt="YouTube" />
         </a>

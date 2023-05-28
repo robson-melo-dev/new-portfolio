@@ -12,19 +12,19 @@ const Contact = () => {
       <div className="Contact__Socials">
         <a
           className="Contact__Social-link"
-          href="https://www.linkedin.com/in/robson-the-dev/"
+          href="https://www.linkedin.com/in/robsonthedev/"
         >
           <img className="Contact__Social-ico" src={linkedin} alt="LinkedIn" />
         </a>
         <a
           className="Contact__Social-link"
-          href="https://www.linkedin.com/in/robson-the-dev/"
+          href="https://github.com/robson-melo-dev"
         >
           <img className="Contact__Social-ico" src={github} alt="GitHub" />
         </a>
         <a
           className="Contact__Social-link"
-          href="https://www.linkedin.com/in/robson-the-dev/"
+          href="https://www.instagram.com/progsemfronteiras/"
         >
           <img
             className="Contact__Social-ico"
@@ -34,7 +34,7 @@ const Contact = () => {
         </a>
         <a
           className="Contact__Social-Link"
-          href="https://www.linkedin.com/in/robson-the-dev/"
+          href="https://www.youtube.com/channel/UCog_5fNwmJn2l9zs7f2RPfQ"
         >
           <img className="Contact__Social-ico" src={youtube} alt="YouTube" />
         </a>

@@ -1,0 +1,22 @@
+.Projects {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5rem 2rem 5rem;
+}
+.Projects__List {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.Project__Odd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Project__Even {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
