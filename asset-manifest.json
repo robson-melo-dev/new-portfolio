@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/new-portfolio/static/css/main.db03061a.css",
+    "main.js": "/new-portfolio/static/js/main.5f8da090.js",
+    "static/media/trigan-logo.png": "/new-portfolio/static/media/trigan-logo.173c09a431fbffddd77c.png",
+    "static/media/lotus-logo-horizontal.png": "/new-portfolio/static/media/lotus-logo-horizontal.282b436d0e03bd243db2.png",
+    "index.html": "/new-portfolio/index.html",
+    "main.db03061a.css.map": "/new-portfolio/static/css/main.db03061a.css.map",
+    "main.5f8da090.js.map": "/new-portfolio/static/js/main.5f8da090.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db03061a.css",
+    "static/js/main.5f8da090.js"
+  ]
+}
