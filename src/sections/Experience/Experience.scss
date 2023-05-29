@@ -10,8 +10,7 @@
   padding: 2rem 5rem 2rem 5rem;
 
   &__Title {
-    @include PoppinsBold;
-    font-size: 3rem;
+    @include Title;
   }
 
   &__BlueLight {

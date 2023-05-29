@@ -1,22 +1,83 @@
+@import "assets/sass/colors";
+@import "assets/sass/animations";
+@import "assets/sass/fonts";
+@import "assets/sass/generalMixins";
+
 .Projects {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  gap: 5rem;
   padding: 2rem 5rem 2rem 5rem;
+
+  &__Title {
+    @include Title;
+  }
+  &__List {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10rem;
+  }
 }
-.Projects__List {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+
+.Project {
+  &__Image {
+    max-width: 50%;
+    border-radius: 15px;
+  }
+  &__Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  &__Title {
+    @include PoppinsBold;
+    font-size: 1.6rem;
+  }
+  &__Description {
+    @include PoppinsRegular;
+  }
+  &__Link {
+    text-decoration: none;
+    color: $accentGreen;
+    padding: 0 1rem 0 1rem;
+    border-radius: 1rem;
+    transition: all 0.2s ease;
+    &:hover {
+      background-color: $purple;
+    }
+  }
 }
-.Project__Odd {
+
+.Odd {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
 }
-.Project__Even {
+.Even {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
+}
+
+.Buttons {
+  display: flex;
+  gap: 2rem;
+
+  &__Left {
+    flex-direction: row-reverse;
+  }
+}
+
+.Arrow {
+  width: 5rem;
+  &__Left {
+    transform: rotate(180deg);
+  }
 }

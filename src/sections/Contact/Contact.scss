@@ -1,6 +1,7 @@
 @import "../../assets/sass/colors";
 @import "../../assets/sass/fonts";
 @import "../../assets/sass/animations";
+@import "assets/sass/generalMixins";
 .Contact {
   width: 100%;
   display: flex;
@@ -30,5 +31,9 @@
   &__Copyright {
     margin: 4rem 0 2rem;
     font-size: 0.8rem;
+  }
+  &__BlueLight {
+    @include fade(1s);
+    @include BlueLightCircle(38vw, 38vw, -10vw);
   }
 }

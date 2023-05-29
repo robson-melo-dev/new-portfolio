@@ -12,7 +12,6 @@ const experiences = [
     title: "(2022) - Frontend Developer at Trigan",
     image: trigan,
     alt: "trigan logo",
-    url: "https://trigan.org/",
   },
 ];
 

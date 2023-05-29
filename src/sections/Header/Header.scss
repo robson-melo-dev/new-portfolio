@@ -1,5 +1,6 @@
 @import "assets/sass/colors";
 @import "assets/sass/animations";
+@import "assets/sass/generalMixins";
 .Header {
   @include fade(0.2s);
   display: flex;
@@ -38,21 +39,6 @@
   }
   &__BlueLightCircle {
     @include fade(1s);
-    position: absolute;
-    z-index: -1;
-    width: 38vw;
-    height: 38vw;
-    left: 82vw;
-    right: 46vw;
-
-    /* circle */
-
-    background: conic-gradient(
-      from 180deg at 50% 50%,
-      $accentGreen 0deg,
-      $purple 360deg
-    );
-    filter: blur(18vw);
-    transform: rotate(-108.84deg);
+    @include BlueLightCircle(38vw, 38vw, 82vw);
   }
 }

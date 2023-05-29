@@ -38,3 +38,30 @@
     border-radius: 2rem;
   }
 }
+
+@mixin Shadow {
+  box-shadow: 0px 0px 62px -12px rgba(0, 0, 0, 1);
+}
+
+@mixin Title {
+  @include PoppinsBold;
+  font-size: 3rem;
+}
+
+@mixin BlueLightCircle($width, $height, $left) {
+  position: absolute;
+  z-index: -1;
+  width: $width;
+  height: $height;
+  left: $left;
+
+  /* circle */
+
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    $accentGreen 0deg,
+    $purple 360deg
+  );
+  filter: blur(18vw);
+  transform: rotate(-108.84deg);
+}

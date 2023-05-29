@@ -20,15 +20,6 @@ const Experience = () => {
               src={experience.image}
               alt={experience.alt}
             />
-            {experience.url ? (
-              <span>
-                <a className="Experience__Link" href={experience.url}>
-                  {experience.name} website
-                </a>
-              </span>
-            ) : (
-              ""
-            )}
           </div>
         ))}
 

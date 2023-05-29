@@ -55,7 +55,7 @@ const Hero = () => {
             self-taught Frontend Developer,
             <br />
             &nbsp;&nbsp;with just over a year of professional experience in this
-            field, <br />
+            area, <br />
             &nbsp;&nbsp;that is my true passion;
           </p>
           {"}"}

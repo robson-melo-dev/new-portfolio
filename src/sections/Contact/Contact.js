@@ -7,7 +7,7 @@ import instagram from "assets/images/icons/Instagram-96.png";
 
 const Contact = () => {
   return (
-    <div className="Contact">
+    <div className="Contact" id="contact">
       <p className="Contact__Hi">You can find me on this platforms!</p>
       <div className="Contact__Socials">
         <a
@@ -46,6 +46,7 @@ const Contact = () => {
       <p className="Contact__Copyright">
         2023 - Robson Melo de Souza - All rights reserved
       </p>
+      <div className="Contact__BlueLight" />
     </div>
   );
 };
