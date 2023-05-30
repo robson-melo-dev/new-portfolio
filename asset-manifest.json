@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/new-portfolio/static/css/main.2a258a45.css",
+    "main.css": "/new-portfolio/static/css/main.62eabbcc.css",
     "main.js": "/new-portfolio/static/js/main.a5d753d6.js",
     "static/media/calculadora.png": "/new-portfolio/static/media/calculadora.24bacfa3b7d750beb1fc.png",
     "static/media/trigan-website.png": "/new-portfolio/static/media/trigan-website.0b7b93ecf1b974d1e5c3.png",
@@ -8,11 +8,11 @@
     "static/media/trigan-logo.png": "/new-portfolio/static/media/trigan-logo.173c09a431fbffddd77c.png",
     "static/media/lotus-logo-horizontal.png": "/new-portfolio/static/media/lotus-logo-horizontal.282b436d0e03bd243db2.png",
     "index.html": "/new-portfolio/index.html",
-    "main.2a258a45.css.map": "/new-portfolio/static/css/main.2a258a45.css.map",
+    "main.62eabbcc.css.map": "/new-portfolio/static/css/main.62eabbcc.css.map",
     "main.a5d753d6.js.map": "/new-portfolio/static/js/main.a5d753d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a258a45.css",
+    "static/css/main.62eabbcc.css",
     "static/js/main.a5d753d6.js"
   ]
 }
