@@ -90,11 +90,14 @@
 @media screen and (max-width: 767px) {
   .Experience {
     padding: 1rem;
+    &__Container {
+      width: 100%;
+    }
     &__Job {
-      min-width: 250px;
-      width: 93%;
+      width: 100%;
       padding: 1rem;
-      max-width: 100%;
+      min-height: 300px;
+      max-width: 270px;
     }
   }
 }

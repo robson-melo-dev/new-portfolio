@@ -1,19 +1,26 @@
 import "./Hero.scss";
 import React from "react";
-
-const about = `<span className="Skills__Object">.AboutMe</span> {
-    <span className="Skills__Property">Profession:</span> Frontend Developer; 
-    <span className="Skills__Property">Technologies:</span> JavaScript,TypeScript, 
-    React, NextJS, Sass, CSS, BEM, Tailwind, GraphQL; 
-}`;
+import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
+  const titles = [" Jedi", " Ninja", " Sorcerer", " Developer"];
   return (
     <div className="Hero">
       <div className="Hero__Presentation">
         <span className="Hero__Greetings">Hi!</span>
         <span className="Hero__Name">I am Robson Melo,</span>
-        <span className="Hero__Profession">frontend developer.</span>
+        <span className="Hero__Profession">
+          Frontend
+          <Typewriter
+            words={titles}
+            loop={1}
+            cursor
+            cursorStyle="_"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={2000}
+          />
+        </span>
       </div>
       <div className="Skills">
         <div className="Skills__Header">
@@ -28,16 +35,13 @@ const Hero = () => {
           <span className="Skills__Class">Skills&nbsp;</span>
           {"{"}
           <p>
-            &nbsp;&nbsp;
             <span className="Skills__Property">Profession: </span>
             Frontend Developer;
           </p>
           <p>
-            &nbsp;&nbsp;
             <span className="Skills__Property">Technologies: </span>
-            JavaScript, TypeScript, React, NextJS,
-            <br />
-            &nbsp;&nbsp;Sass, CSS, BEM, Tailwind, GraphQL;
+            JavaScript, TypeScript, React, NextJS, Sass, CSS, BEM, Tailwind,
+            GraphQL;
           </p>
           {"}"}
         </code>
@@ -45,18 +49,13 @@ const Hero = () => {
           <span className="Skills__Class">Work&nbsp;</span>
           {"{"}
           <p>
-            &nbsp;&nbsp;
             <span className="Skills__Property">CurrentJob: </span>
             Remote Frontend Contractor in the US;
           </p>
           <p>
-            &nbsp;&nbsp;
             <span className="Skills__Property">AboutMe: </span>I am a
-            self-taught Frontend Developer,
-            <br />
-            &nbsp;&nbsp;with just over a year of professional experience in this
-            area, <br />
-            &nbsp;&nbsp;that is my true passion;
+            self-taught Frontend Developer, with just over a year of
+            professional experience in this area, that is my true passion;
           </p>
           {"}"}
         </code>

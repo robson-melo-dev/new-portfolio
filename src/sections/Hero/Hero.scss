@@ -8,13 +8,14 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem 5rem 2rem 5rem;
-  min-height: 90vh;
+  min-height: 70vh;
   &__Presentation {
+    min-width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    font-size: 54px;
+    font-size: 48px;
   }
   &__Greetings {
     @include PoppinsRegular;
@@ -102,17 +103,26 @@
 
 @media screen and (max-width: 767px) {
   .Hero {
+    padding: 1rem;
     flex-direction: column;
     align-content: center;
     gap: 3rem;
     &__Presentation {
+      align-items: center;
       @include FntMediumlarge;
     }
   }
 }
 
 @media screen and (max-width: 1366px) {
+  .Hero {
+    &__Presentation {
+      width: 100%;
+      min-width: 300px;
+    }
+  }
   .Skills {
+    width: 100%;
     max-width: 500px;
   }
 }
