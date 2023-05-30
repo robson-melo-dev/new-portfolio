@@ -103,4 +103,15 @@
       max-width: 100%;
     }
   }
+  .Arrow {
+    &__Left {
+      transform: rotate(0deg);
+    }
+  }
+
+  .Buttons {
+    &__Left {
+      flex-direction: row;
+    }
+  }
 }

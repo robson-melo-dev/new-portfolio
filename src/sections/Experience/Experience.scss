@@ -90,14 +90,21 @@
 @media screen and (max-width: 767px) {
   .Experience {
     padding: 1rem;
-  }
-  .Job {
-    max-width: 100%;
+    &__Job {
+      min-width: 250px;
+      width: 93%;
+      padding: 1rem;
+      max-width: 100%;
+    }
   }
 }
 
 @media screen and (max-width: 1366px) {
   .Experience {
-    flex-direction: column;
+    &__Container {
+      padding: 1rem;
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
 }

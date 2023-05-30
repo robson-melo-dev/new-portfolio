@@ -11,23 +11,23 @@ const Contact = () => {
       <p className="Contact__Hi">You can find me on this platforms!</p>
       <div className="Contact__Socials">
         <a
-          className="Contact__Social-link"
+          className="Contact__Social-Link"
           href="https://www.linkedin.com/in/robsonthedev/"
         >
-          <img className="Contact__Social-ico" src={linkedin} alt="LinkedIn" />
+          <img className="Contact__Social-Icon" src={linkedin} alt="LinkedIn" />
         </a>
         <a
-          className="Contact__Social-link"
+          className="Contact__Social-Link"
           href="https://github.com/robson-melo-dev"
         >
-          <img className="Contact__Social-ico" src={github} alt="GitHub" />
+          <img className="Contact__Social-Icon" src={github} alt="GitHub" />
         </a>
         <a
-          className="Contact__Social-link"
+          className="Contact__Social-Link"
           href="https://www.instagram.com/progsemfronteiras/"
         >
           <img
-            className="Contact__Social-ico"
+            className="Contact__Social-Icon"
             src={instagram}
             alt="Instagram"
           />
@@ -36,7 +36,7 @@ const Contact = () => {
           className="Contact__Social-Link"
           href="https://www.youtube.com/channel/UCog_5fNwmJn2l9zs7f2RPfQ"
         >
-          <img className="Contact__Social-ico" src={youtube} alt="YouTube" />
+          <img className="Contact__Social-Icon" src={youtube} alt="YouTube" />
         </a>
       </div>
       <p className="Contact__Proposal">

@@ -3,6 +3,7 @@
 @import "../../assets/sass/animations";
 @import "assets/sass/generalMixins";
 .Contact {
+  padding-top: 5rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -15,7 +16,9 @@
     gap: 1rem;
   }
 
-  &__Social-ico {
+  &__Social-Icon {
+    max-width: 82px;
+    height: auto;
     transition: all 0.2s ease-in;
     &:hover {
       background: $purple;
@@ -35,5 +38,25 @@
   &__BlueLight {
     @include fade(1s);
     @include BlueLightCircle(38vw, 38vw, 0, auto, auto, 0);
+  }
+}
+
+//media queries
+@media screen and (max-width: 767px) {
+  .Contact {
+    padding: 1rem;
+    @include FntSmall;
+    &__Social-Icon {
+      max-width: 48px;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .Contact {
+    &__Socials {
+      gap: 0.5rem;
+    }
   }
 }
