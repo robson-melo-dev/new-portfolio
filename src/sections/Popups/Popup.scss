@@ -48,14 +48,15 @@
   }
   &__Title {
     @include PoppinsBold;
-    font-size: 50px;
+    @include FntLarge;
+    text-align: center;
     line-height: 60px;
     margin: 0 0 15px;
   }
   &__Description {
     @include PoppinsRegular;
     max-width: 385px;
-    font-size: 18px;
+    @include FntMedium;
     line-height: 32px;
     opacity: 0.5;
   }

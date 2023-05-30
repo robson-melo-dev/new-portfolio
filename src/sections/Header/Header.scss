@@ -1,3 +1,4 @@
+@import "assets/sass/fonts";
 @import "assets/sass/colors";
 @import "assets/sass/animations";
 @import "assets/sass/generalMixins";
@@ -16,7 +17,7 @@
   &__Link {
     padding: 0 1rem 0 1rem;
     text-decoration: none;
-    font-size: 18px;
+    @include FntMedium;
     color: $white;
     transition: all 0.2s ease-in;
     &:hover {
@@ -39,6 +40,37 @@
   }
   &__BlueLightCircle {
     @include fade(1s);
-    @include BlueLightCircle(38vw, 38vw, 82vw);
+    @include BlueLightCircle(38vw, 38vw, auto, 10vw, 0, auto);
+  }
+}
+
+//media queries for responsiveness
+@media screen and (max-width: 767px) {
+  .Header {
+    padding: 1rem;
+    display: block;
+    &__Links {
+      display: none;
+    }
+
+    &__Socials {
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .Header {
+    &__Links {
+      gap: 1rem;
+    }
+    &__Socials {
+      justify-content: center;
+      gap: 1rem;
+    }
+    &__BlueLightCircle {
+      @include BlueLightCircle(38vw, 38vw, auto, 10vw, 0, auto);
+    }
   }
 }

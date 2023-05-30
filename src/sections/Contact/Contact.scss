@@ -34,6 +34,6 @@
   }
   &__BlueLight {
     @include fade(1s);
-    @include BlueLightCircle(38vw, 38vw, -10vw);
+    @include BlueLightCircle(38vw, 38vw, 0, auto, auto, 0);
   }
 }

@@ -1,3 +1,4 @@
+@import "assets/sass/fonts";
 @import "assets/sass/colors";
 @mixin techBackground {
   background-color: #ffffff;
@@ -45,14 +46,15 @@
 
 @mixin Title {
   @include PoppinsBold;
-  font-size: 3rem;
+  @include FntLarge;
 }
 
-@mixin BlueLightCircle($width, $height, $left) {
+@mixin BlueLightCircle($width, $height, $left, $right, $top, $bottom) {
   position: absolute;
   z-index: -1;
   width: $width;
   height: $height;
+  right: $right;
   left: $left;
 
   /* circle */
@@ -64,4 +66,8 @@
   );
   filter: blur(18vw);
   transform: rotate(-108.84deg);
+
+  @media screen and (max-width: 767px) {
+    filter: blur(30vw);
+  }
 }

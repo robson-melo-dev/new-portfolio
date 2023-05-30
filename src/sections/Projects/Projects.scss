@@ -35,10 +35,11 @@
   }
   &__Title {
     @include PoppinsBold;
-    font-size: 1.6rem;
+    @include FntMedium;
   }
   &__Description {
     @include PoppinsRegular;
+    @include FntSmall;
   }
   &__Link {
     text-decoration: none;
@@ -79,5 +80,27 @@
   width: 5rem;
   &__Left {
     transform: rotate(180deg);
+  }
+}
+
+//media queries for responsiveness
+@media screen and (max-width: 767px) {
+  .Projects {
+    padding: 1rem;
+  }
+  .Project {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .Projects {
+    padding: 1rem;
+  }
+  .Project {
+    flex-direction: column;
+    &__Image {
+      max-width: 100%;
+    }
   }
 }

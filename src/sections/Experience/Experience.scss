@@ -20,13 +20,13 @@
     min-width: 85vw;
     min-height: 52vw;
     top: 0;
-    left: 10vw;
+    left: 0;
     background: conic-gradient(
       from 180deg at 50% 50%,
       #00ffe0 0deg,
       #7000ff 360deg
     );
-    filter: blur(750px);
+    filter: blur(39vw);
   }
   &__Container {
     display: flex;
@@ -76,12 +76,28 @@
   &__WorkTitle {
     padding: 4rem 5rem 1rem 0;
     @include FiraRegular;
-    font-size: 1.5rem;
+    @include FntMedium;
   }
   &__WorkImg {
     width: 15rem;
   }
   &__Link {
     @include Link;
+  }
+}
+
+//media queries for responsiveness
+@media screen and (max-width: 767px) {
+  .Experience {
+    padding: 1rem;
+  }
+  .Job {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .Experience {
+    flex-direction: column;
   }
 }

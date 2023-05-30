@@ -14,3 +14,27 @@
   font-family: "Fira Sans", sans-serif;
   font-weight: 300;
 }
+
+@mixin FntSmaller {
+  font-size: 10px;
+}
+
+@mixin FntSmall {
+  font-size: 16px;
+}
+
+@mixin FntMedium {
+  font-size: 18px;
+}
+
+@mixin FntMediumlarge {
+  font-size: 24px;
+}
+
+@mixin FntLarge {
+  font-size: 36px;
+}
+
+@mixin FntXLarge {
+  font-size: 64px;
+}
