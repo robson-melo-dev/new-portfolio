@@ -4,7 +4,7 @@
 @import "assets/sass/generalMixins";
 .Experience {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   padding: 2rem 5rem 2rem 5rem;
@@ -91,6 +91,7 @@
 @media screen and (max-width: 767px) {
   .Experience {
     padding: 1rem;
+    flex-direction: column;
     &__Container {
       width: 100%;
     }
@@ -105,9 +106,9 @@
 
 @media screen and (max-width: 1366px) {
   .Experience {
+    min-height: 60vh;
     &__Container {
       padding: 1rem;
-      flex-direction: column;
       gap: 2rem;
     }
     &__BlueLight {
@@ -119,7 +120,7 @@
 
 @media screen and (min-width: 1900px) {
   .Experience {
-    min-height: 60vh;
+    min-height: 50vh;
     &__Container {
       padding: 2rem;
       gap: 5rem;
