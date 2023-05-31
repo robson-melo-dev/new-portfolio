@@ -19,6 +19,7 @@
     position: absolute;
     min-width: 85vw;
     min-height: 52vw;
+    aspect-ratio: 1.63 / 1;
     top: 0;
     left: 0;
     background: conic-gradient(
@@ -108,6 +109,26 @@
       padding: 1rem;
       flex-direction: column;
       gap: 2rem;
+    }
+    &__BlueLight {
+      min-height: 150vw;
+      filter: blur(200vw);
+    }
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .Experience {
+    min-height: 60vh;
+    &__Container {
+      padding: 2rem;
+      gap: 5rem;
+    }
+    &__Job {
+      padding: 2rem;
+    }
+    &__WorkTitle {
+      @include FntMediumlarge;
     }
   }
 }

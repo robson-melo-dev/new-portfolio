@@ -47,6 +47,9 @@
 @mixin Title {
   @include PoppinsBold;
   @include FntLarge;
+  @media screen and (min-width: 1900px) {
+    @include FntXLarge;
+  }
 }
 
 @mixin BlueLightCircle($width, $height, $left, $right, $top, $bottom) {
@@ -56,6 +59,8 @@
   height: $height;
   right: $right;
   left: $left;
+  top: $top;
+  bottom: $bottom;
 
   /* circle */
 

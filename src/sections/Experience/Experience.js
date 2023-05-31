@@ -22,18 +22,6 @@ const Experience = () => {
             />
           </div>
         ))}
-
-        {/* <div className="Experience__Job">
-          <div className="Experience__Spheres">
-            <div className="Experience__Sphere-Red" />
-            <div className="Experience__Sphere-Yellow" />
-            <div className="Experience__Sphere-Green" />
-          </div>
-          <div className="Experience__WorkTitle">
-            (2022-current) - Frontend Developer Contractor at a US company
-          </div>
-          <img className="Experience__WorkImg" src={lotus} />
-        </div> */}
       </div>
       <div className="Experience__BlueLight" />
     </div>

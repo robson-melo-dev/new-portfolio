@@ -126,3 +126,27 @@
     max-width: 500px;
   }
 }
+
+@media screen and (min-width: 1900px) {
+  .Hero {
+    min-height: 90vh;
+    &__Presentation {
+      @include FntXLarge;
+      min-width: 860px;
+    }
+    &__Profession {
+      -webkit-text-stroke-width: 4px;
+    }
+  }
+  .Skills {
+    max-width: 862px;
+    &__Header {
+      padding: 1rem;
+      @include FntSmall;
+    }
+    &__Code {
+      @include FntMedium;
+      line-height: 2rem;
+    }
+  }
+}

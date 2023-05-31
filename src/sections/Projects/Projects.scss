@@ -70,6 +70,7 @@
 .Buttons {
   display: flex;
   gap: 2rem;
+  align-items: center;
 
   &__Left {
     flex-direction: row-reverse;
@@ -113,5 +114,36 @@
     &__Left {
       flex-direction: row;
     }
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .Projects {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .Project {
+    &__Content {
+      max-width: 960px;
+    }
+    &__Image {
+      max-width: 100%;
+    }
+    &__Title {
+      @include FntLarge;
+    }
+    &__Description {
+      @include FntMediumlarge;
+    }
+    &__Link {
+      @include FntMediumlarge;
+    }
+  }
+  .Arrow {
+    width: 10rem;
+  }
+
+  .Buttons {
+    gap: 4rem;
   }
 }
