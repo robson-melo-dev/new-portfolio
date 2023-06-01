@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/new-portfolio/static/css/main.51c19076.css",
-    "main.js": "/new-portfolio/static/js/main.248cc9ef.js",
+    "main.css": "/new-portfolio/static/css/main.3f2fa3c2.css",
+    "main.js": "/new-portfolio/static/js/main.bf749ec8.js",
     "static/media/calculadora.png": "/new-portfolio/static/media/calculadora.24bacfa3b7d750beb1fc.png",
     "static/media/trigan-website.png": "/new-portfolio/static/media/trigan-website.0b7b93ecf1b974d1e5c3.png",
     "static/media/space-tours.png": "/new-portfolio/static/media/space-tours.e8294739cb289dcb072c.png",
     "static/media/trigan-logo.png": "/new-portfolio/static/media/trigan-logo.173c09a431fbffddd77c.png",
     "static/media/lotus-logo-horizontal.png": "/new-portfolio/static/media/lotus-logo-horizontal.282b436d0e03bd243db2.png",
     "index.html": "/new-portfolio/index.html",
-    "main.51c19076.css.map": "/new-portfolio/static/css/main.51c19076.css.map",
-    "main.248cc9ef.js.map": "/new-portfolio/static/js/main.248cc9ef.js.map"
+    "main.3f2fa3c2.css.map": "/new-portfolio/static/css/main.3f2fa3c2.css.map",
+    "main.bf749ec8.js.map": "/new-portfolio/static/js/main.bf749ec8.js.map"
   },
   "entrypoints": [
-    "static/css/main.51c19076.css",
-    "static/js/main.248cc9ef.js"
+    "static/css/main.3f2fa3c2.css",
+    "static/js/main.bf749ec8.js"
   ]
 }
