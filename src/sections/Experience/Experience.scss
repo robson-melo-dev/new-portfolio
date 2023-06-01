@@ -14,7 +14,7 @@
   }
 
   &__BlueLight {
-    @include fade(2s);
+    @include fade(1.5s);
     z-index: -1;
     position: absolute;
     min-width: 85vw;

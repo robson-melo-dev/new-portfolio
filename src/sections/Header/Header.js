@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./Header.scss";
 import github from "assets/images/icons/gitHub.png";
 import linkedin from "assets/images/icons/LinkedIn.png";
@@ -7,46 +8,57 @@ import instagram from "assets/images/icons/Instagram.png";
 
 const Header = () => {
   return (
-    <nav className="Header">
-      <div className="Header__Links">
-        <a className="Header__Link" href="#experience">
-          Experience
-        </a>
-        <a className="Header__Link" href="#projects">
-          Projects
-        </a>
-        <a className="Header__Link" href="#contact">
-          Contact
-        </a>
-      </div>
-      <div className="Header__Socials">
-        <a
-          className="Header__Social-link"
-          href="https://www.linkedin.com/in/robsonthedev/"
-        >
-          <img className="Header__Social-ico" src={linkedin} alt="LinkedIn" />
-        </a>
-        <a
-          className="Header__Social-link"
-          href="https://github.com/robson-melo-dev"
-        >
-          <img className="Header__Social-ico" src={github} alt="GitHub" />
-        </a>
-        <a
-          className="Header__Social-link"
-          href="https://www.instagram.com/progsemfronteiras/"
-        >
-          <img className="Header__Social-ico" src={instagram} alt="Instagram" />
-        </a>
-        <a
-          className="Header__Social-Link"
-          href="https://www.youtube.com/channel/UCog_5fNwmJn2l9zs7f2RPfQ"
-        >
-          <img className="Header__Social-ico" src={youtube} alt="YouTube" />
-        </a>
-      </div>
-      <div className="Header__BlueLightCircle" />
-    </nav>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: false }}
+    >
+      <nav className="Header">
+        <div className="Header__Links">
+          <a className="Header__Link" href="#experience">
+            Experience
+          </a>
+          <a className="Header__Link" href="#projects">
+            Projects
+          </a>
+          <a className="Header__Link" href="#contact">
+            Contact
+          </a>
+        </div>
+
+        <div className="Header__Socials">
+          <a
+            className="Header__Social-link"
+            href="https://www.linkedin.com/in/robsonthedev/"
+          >
+            <img className="Header__Social-ico" src={linkedin} alt="LinkedIn" />
+          </a>
+          <a
+            className="Header__Social-link"
+            href="https://github.com/robson-melo-dev"
+          >
+            <img className="Header__Social-ico" src={github} alt="GitHub" />
+          </a>
+          <a
+            className="Header__Social-link"
+            href="https://www.instagram.com/progsemfronteiras/"
+          >
+            <img
+              className="Header__Social-ico"
+              src={instagram}
+              alt="Instagram"
+            />
+          </a>
+          <a
+            className="Header__Social-Link"
+            href="https://www.youtube.com/channel/UCog_5fNwmJn2l9zs7f2RPfQ"
+          >
+            <img className="Header__Social-ico" src={youtube} alt="YouTube" />
+          </a>
+        </div>
+        <div className="Header__BlueLightCircle" />
+      </nav>
+    </motion.div>
   );
 };
 

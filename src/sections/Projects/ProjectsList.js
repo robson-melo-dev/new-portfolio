@@ -1,7 +1,6 @@
 import spaceTours from "assets/images/space-tours.png";
 import trigan from "assets/images/trigan-website.png";
 import calculadora from "assets/images/calculadora.png";
-import Projects from "./Projects";
 const ProjectsList = [
   {
     id: 1,

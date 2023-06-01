@@ -4,7 +4,6 @@ import Hero from "sections/Hero";
 import Experience from "sections/Experience";
 import Projects from "sections/Projects";
 import Contact from "sections/Contact";
-import Building from "sections/Popups";
 
 function App() {
   return (
