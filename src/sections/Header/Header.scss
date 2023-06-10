@@ -33,10 +33,12 @@
   }
 
   &__Social-ico {
-    transition: all 0.2s ease-in;
+    transition: fill 0.2s ease-in-out;
+    fill: $white;
+    width: 48px;
+    height: 48px;
     &:hover {
-      background: $purple;
-      border-radius: 40%;
+      fill: $accentGreen;
     }
   }
   &__BlueLightCircle {

@@ -20,10 +20,10 @@
   &__Social-Icon {
     max-width: 82px;
     height: auto;
-    transition: all 0.2s ease-in;
+    fill: $white;
+    transition: all 0.2s ease-in-out;
     &:hover {
-      background: $purple;
-      border-radius: 40%;
+      fill: $accentGreen;
     }
   }
   &__Proposal {

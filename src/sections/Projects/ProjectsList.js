@@ -22,7 +22,7 @@ const ProjectsList = [
   {
     id: 3,
     name: "Space Tours",
-    description: `A React based web app proposed to one of my clients to test my ability to strictly follow a design and work with Apollo/GrapQl for API consumption.
+    description: `A React based web app proposed by one of my clients to test my ability to strictly follow a design and work with Apollo/GrapQl for API consumption.
       This web app retrieves data from Space-X rocket launches and provides the user with both records and prints a "ticket" for the selected trip.`,
     image: spaceTours,
     codeUrl: "https://github.com/robson-melo-dev/react-coding-exercise",
