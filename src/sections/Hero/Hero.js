@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 
 const Hero = () => {
-  const titles = [" Jedi", " Ninja", " Sorcerer", " Developer"];
+  const titles = [ " Developer"];
   return (
     <div className="Hero">
       <motion.div
@@ -20,12 +20,12 @@ const Hero = () => {
             Frontend
             <Typewriter
               words={titles}
-              loop={2}
+              loop={5}
               cursor
               cursorStyle="_"
-              typeSpeed={70}
+              typeSpeed={50}
               deleteSpeed={50}
-              delaySpeed={2000}
+              delaySpeed={3000}
             />
           </span>
         </div>
@@ -64,12 +64,11 @@ const Hero = () => {
             {"{"}
             <p>
               <span className="Skills__Property">CurrentJob: </span>
-              Remote Frontend Contractor in the US;
+              Lotus Web Systems;
             </p>
             <p>
               <span className="Skills__Property">AboutMe: </span>I am a
-              self-taught Frontend Developer, with just over a year of
-              professional experience in this area, that is my true passion;
+              self-taught Frontend Developer, with a passion for building tools that really provides value and solve problems;
             </p>
             {"}"}
           </code>

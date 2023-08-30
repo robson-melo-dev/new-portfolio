@@ -3,7 +3,7 @@ import trigan from "assets/images/trigan-logo.png";
 const experiences = [
   {
     name: "Lotus",
-    title: "(2022-current) - Frontend Developer Contractor at a US company",
+    title: "(2022-current) - Contractor Frontend Developer (US - Remote)",
     image: lotus,
     alt: "lotus logo",
   },
