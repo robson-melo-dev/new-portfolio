@@ -1,13 +1,215 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*
+ * Self-hosted, latin + latin-ext subsets only (124 KB total).
+ *
+ * Previously loaded from Google Fonts. The swap from the fallback face to
+ * Poppins reflowed the whole page, and with the longer Portuguese copy that
+ * was worth 0.11 of cumulative layout shift. Serving the files from the same
+ * origin — with the two first-paint faces preloaded in index.html — removes
+ * the CSS-then-font request chain that made the swap so late.
+ */
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/new-portfolio/fonts/poppins-400-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/new-portfolio/fonts/poppins-400-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/new-portfolio/fonts/poppins-600-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/new-portfolio/fonts/poppins-600-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/new-portfolio/fonts/poppins-700-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/new-portfolio/fonts/poppins-700-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/new-portfolio/fonts/fira-sans-300-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/new-portfolio/fonts/fira-sans-300-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    /* Signature gradient, shared by every glow on the page. */
+    --glow: conic-gradient(from 180deg at 50% 50%, #0ee6b7 0deg, #7000ff 360deg);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* In-page anchors clear the sticky header. `--header-height` is measured
+       and published by `useHeaderOffset`; the fallback covers the first paint
+       and the case where the hook never runs. */
+    scroll-padding-top: calc(var(--header-height, 9rem) + 1rem);
+  }
+
+  body {
+    @apply bg-dark-grey font-sans text-white antialiased;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  code {
+    font-family: theme("fontFamily.code");
+    letter-spacing: 0.1em;
+  }
+
+  /* Visible focus ring for every keyboard-reachable control. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent-green ring-offset-2 ring-offset-dark-grey;
+    border-radius: 0.25rem;
+  }
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #4a4a4a;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-accent-green;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-purple;
+  }
+}
+
+@layer components {
+  /*
+   * The signature "code editor window" chrome. Kept here rather than spread
+   * across utility classes so the look lives in exactly one place.
+   */
+  .terminal-window {
+    @apply flex flex-col gap-4 rounded-t-2xl border border-chrome-border bg-black/80 p-3 font-code sm:p-4;
+  }
+
+  .terminal-titlebar {
+    @apply relative flex items-start justify-center p-2 text-smaller;
+  }
+
+  .terminal-spheres {
+    @apply absolute left-0 top-2 flex gap-2;
+  }
+
+  .terminal-sphere {
+    @apply h-3 w-3 rounded-full sm:h-4 sm:w-4;
+  }
+
+  .terminal-title {
+    @apply max-w-full truncate rounded bg-chrome-title px-6 py-0.5 sm:px-20;
+  }
+
+  /*
+   * Blurred conic gradient used as an ambient background light. Decorative
+   * only, so every instance is aria-hidden at the markup level.
+   */
+  .glow {
+    @apply pointer-events-none absolute -z-10;
+    background: var(--glow);
+    /* Heavy blur plus low opacity: an ambient tint, not a wash. Text sits on
+       the dark body background, so contrast stays AA. */
+    filter: blur(18vw);
+    opacity: 0.22;
+    transform: rotate(-108.84deg);
+  }
+
+  @media screen and (max-width: 767px) {
+    .glow {
+      filter: blur(30vw);
+      opacity: 0.18;
+    }
+  }
+
+  /*
+   * Outlined display text used for the hero tagline.
+   *
+   * The stroke is sized in `em`, not px. This text is fluid (clamp) and much
+   * smaller than the 48-64px heading the effect was originally designed for;
+   * a fixed 2px stroke ate the counters of the letters and read as blur, and
+   * the old 4px override above 1900px made it worse exactly where the type is
+   * most visible. At 0.03em it stays a hairline at every size.
+   */
+  .text-outline {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.03em;
+    -webkit-text-stroke-color: #0ee6b7;
+    paint-order: stroke fill;
+  }
+}
+
+/*
+ * Global reduced-motion guard: suppresses every entrance, typing and looping
+ * animation, including framer-motion's inline transitions.
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
 }

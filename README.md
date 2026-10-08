@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Portfolio — Robson Melo de Souza
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio: Fullstack Developer, focused on complex integrations, ERPs and
+scalable architectures.
 
-## Available Scripts
+Live: <https://robson-melo-dev.github.io/new-portfolio/>
 
-In the project directory, you can run:
+## Stack
 
-### `npm start`
+- **Vite** — build and dev server
+- **React 19** + **TypeScript** (`strict`)
+- **Tailwind CSS** — design tokens live in `tailwind.config.ts`
+- **framer-motion** — scroll reveals, via shared variants in `src/lib/motion.ts`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+No global state library and no component framework: the site is static content,
+so React's local state is enough.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Commands
 
-### `npm test`
+```bash
+npm install
+npm run dev        # dev server with HMR
+npm run typecheck  # tsc --noEmit
+npm run lint       # eslint
+npm run build      # typecheck, then build to dist/
+npm run preview    # serve the production build locally
+npm run deploy     # publish dist/ to GitHub Pages
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`vite.config.ts` sets `base: "/new-portfolio/"` because the site is served from a
+GitHub Pages sub-path. Asset URLs only resolve correctly in `preview` and in
+production — not under a plain static server at the domain root.
 
-### `npm run build`
+## Layout
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+src/
+  data/
+    shared.ts         Locale-invariant: ids, URLs, images, dates, tech names
+    locales/en.ts     English copy
+    locales/pt-BR.ts  Brazilian Portuguese copy
+    locales/types.ts  The shape both locales must satisfy
+    portfolio.ts      Merges shared + locale into what components render
+  i18n/               Locale context, browser detection, localStorage
+  components/         Reusable primitives (Section, TerminalWindow, Badge, Card, icons)
+  sections/           Page sections (Header, Hero, About, TechStack, Experience, Projects, Contact)
+  hooks/              useTypewriter, usePrefersReducedMotion, useHeaderOffset
+  lib/motion.ts       Shared framer-motion variants
+  index.css           Tailwind entry + the signature terminal/glow styles
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Components hold no copy, links, or dates — they read everything from
+`useContent()`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Updating content
 
-### `npm run eject`
+Anything that is **the same in both languages** — a URL, an image, a date, a
+company name, a technology name — lives in `src/data/shared.ts`, once.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Anything that is **prose** lives in `src/data/locales/en.ts` and
+`src/data/locales/pt-BR.ts`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`locales/types.ts` keys roles, projects, tech groups and social links by id, so
+adding an entry fails `npm run typecheck` until every locale has copy for it. A
+half-translated page cannot reach the build.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Internationalisation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+English and Brazilian Portuguese, toggled by the flag control in the header.
 
-## Learn More
+- First visit follows the browser: any `pt*` in `navigator.languages` gives
+  Portuguese, otherwise English.
+- Changing it saves to `localStorage` under `portfolio:locale`, and that
+  preference wins over the browser on later visits. Every storage access is
+  wrapped — private modes throw.
+- Switching also updates `<html lang>`, `<title>` and the meta description.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Accessibility
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Semantic landmarks and heading order, keyboard-reachable controls with visible
+focus, accessible names on icon-only links, and a global
+`prefers-reduced-motion` guard in `src/index.css` that suppresses every
+animation — including the hero typewriter, which returns its text statically.
 
-### Code Splitting
+## Planning
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Change artifacts live under `openspec/changes/`.
