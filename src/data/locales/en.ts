@@ -62,7 +62,7 @@ export const en: LocaleContent = {
       "what-i-build":
         "Full Stack Software Engineer specialised in building complex integrations, scalable architectures and ERP systems, with deep domain knowledge in the AgTech and Telecom industries.",
       domains:
-        "In Telecom, I built and maintained end-to-end integrations for internet service providers, MVNOs and neutral networks — where high data availability and consistency are essencial. I also worked on the core ERP engine and its database architecture, resolving critical bugs and shipping systemic improvements rather than patches.",
+        "In Telecom, I built and maintained end-to-end integrations for internet service providers, MVNOs and neutral networks — where high data availability and consistency are essential. I also worked on the core ERP engine and its database architecture, resolving critical bugs and shipping systemic improvements rather than patches.",
       decoupling:
         "A lot of that comes down to decoupling. Introducing message queuing and asynchronous communication with RabbitMQ significantly reduced processing bottlenecks in mission-critical routines: slow, failure-prone work moves off the request path, so an integration degrades gracefully instead of taking the product down with it.",
       solopreneur:
